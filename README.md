@@ -66,3 +66,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+REFERENCES
+
+https://programmingwithmosh.com/react/react-virtual-dom-explained/
+https://evilmartians.com/chronicles/optimizing-react-virtual-dom-explained
+https://reactjs.org/docs/react-component.html
+https://reactjs.org/blog/2018/06/07/you-probably-dont-need-derived-state.html#what-about-memoization
+https://codeburst.io/when-to-use-component-or-purecomponent-a60cfad01a81
+https://www.robinwieruch.de/react-function-component
+https://medium.com/@trekinbami/using-react-memo-and-memoization-1970eb1ed128
+https://mariosfakiolas.com/blog/my-react-components-render-twice-and-drive-me-crazy/
