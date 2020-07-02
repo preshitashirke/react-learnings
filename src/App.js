@@ -5,6 +5,7 @@ import BasicComponent from '../src/BasicComponentExample';
 import PureComponentExample from '../src/PureComponentExample';
 import MemoExample from '../src/MemoExample';
 import RenderPropExample, { SimpleList, TagsList } from '../src/RenderPropExample';
+import { FeatureToggledButton } from '../src/HOCExample';
 
 class App extends React.Component{
 
@@ -42,12 +43,13 @@ class App extends React.Component{
     console.log("App render is called...")
     return (
       <div className="App">
-        <BasicComponent/>
+        {/* <BasicComponent/> */}
         {/* <PureComponentExample list={this.state.list}/> */}
-        <RenderPropExample>
-          {/* {(listItems) => <SimpleList list={listItems}/>} */}
+        {/* <RenderPropExample>
+          {(listItems) => <SimpleList list={listItems}/>}
           {(listItems) => <TagsList list={listItems}/>}
-        </RenderPropExample>
+        </RenderPropExample> */}
+        <FeatureToggledButton/>
       </div>
     );
   }
