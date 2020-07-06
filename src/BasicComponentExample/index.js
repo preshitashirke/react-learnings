@@ -31,7 +31,7 @@ export default class BasicComponent extends React.Component{
                 <div className="mb-3">My name is {this.state.name}</div>
                 <button className="btn btn-primary mb-3" onClick={this.sayHello}>Say hello</button>
                 {/*<button className="btn btn-primary" onClick={this.sayHello.bind(this)}>Say hello</button>*/}
-                 {/*<button className="btn btn-primary" onClick={() => this.sayHello}>Say hello</button>*/}
+                 {/*<button className="btn btn-primary" onClick={() => this.sayHello()}>Say hello</button>*/}
                 {this.state.showGreeting && <div>Hello {this.state.name}</div>}
             </React.Fragment>
         );

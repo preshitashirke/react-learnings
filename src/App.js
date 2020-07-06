@@ -6,6 +6,7 @@ import PureComponentExample from '../src/PureComponentExample';
 import MemoExample from '../src/MemoExample';
 import RenderPropExample, { SimpleList, TagsList } from '../src/RenderPropExample';
 import { FeatureToggledButton } from '../src/HOCExample';
+import { FeatureToggledButtonWithRef } from '../src/ForwardRefExample';
 
 class App extends React.Component{
 
@@ -27,6 +28,7 @@ class App extends React.Component{
         }
     ]
     }
+    this.featureToggledButtonRef = React.createRef();
   }
 
   componentDidMount = () =>{
@@ -37,19 +39,22 @@ class App extends React.Component{
     //     list : this.state.list
     //   })
     // }, 3000);
+    // console.log("featureToggledButtonRef", this.featureToggledButtonRef);
+    // this.featureToggledButtonRef.current.focus();
   }
 
   render() {
     console.log("App render is called...")
     return (
       <div className="App">
-        {/* <BasicComponent/> */}
+        <BasicComponent/>
         {/* <PureComponentExample list={this.state.list}/> */}
         {/* <RenderPropExample>
           {(listItems) => <SimpleList list={listItems}/>}
           {(listItems) => <TagsList list={listItems}/>}
         </RenderPropExample> */}
-        <FeatureToggledButton/>
+        {/* <FeatureToggledButton/> */}
+        {/* <FeatureToggledButtonWithRef ref={this.featureToggledButtonRef}/> */}
       </div>
     );
   }
